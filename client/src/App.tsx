@@ -1,9 +1,8 @@
-import React, { FunctionComponent } from "react";
+import React from "react";
 import "./App.css";
 import HelloWorldHeader from "./components/HelloWorldHeader";
 import AllRecipes from "./components/AllRecipes";
 import AddNewRecipe from "./components/AddNewRecipe";
-import { Box } from "@material-ui/core";
 
 const App: React.FC = () => {
   return (

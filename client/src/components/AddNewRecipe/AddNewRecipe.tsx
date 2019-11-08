@@ -2,12 +2,15 @@ import React, { useState, FunctionComponent } from "react";
 import { useMutation } from "@apollo/react-hooks";
 import ADD_NEW_RECIPE from "../../graphql/AddNewRecipe";
 
-import { RecipeCreateInput } from "../../../../prisma-react-hw/generated/prisma-client/index";
+import {
+  Recipe,
+  RecipeCreateInput
+} from "../../../../prisma-react-hw/generated/prisma-client/index";
 import { Box } from "@material-ui/core";
 
 const AddNewRecipe: FunctionComponent = () => {
-  const [title, setTitle] = useState("");
-  const [ingredients, setIngredients] = useState("");
+  const [title, setTitle] = useState<string>("");
+  const [ingredients, setIngredients] = useState<string>("");
   console.log(title);
 
   const [newRecipe, { error, data }] = useMutation<RecipeCreateInput>(

@@ -1,12 +1,7 @@
 import React, { FunctionComponent } from "react";
 import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
-import {
-  withStyles,
-  Theme,
-  createStyles,
-  makeStyles
-} from "@material-ui/core/styles";
+import { Theme, createStyles, makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
