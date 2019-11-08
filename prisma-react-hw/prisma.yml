@@ -1,0 +1,6 @@
+endpoint: https://eu1.prisma.sh/esko-kalervo-salaka-928fc7/demo/dev
+datamodel: datamodel.prisma
+
+generate:
+  - generator: typescript-client
+    output: ./generated/prisma-client/
